@@ -1,4 +1,3 @@
-
 import './NavBar.css'; // Import the updated CSS
 import logo from './assets/logo.png'; // Replace with your actual logo path
 

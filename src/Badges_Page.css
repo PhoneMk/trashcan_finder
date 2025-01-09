@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Afacad';
+  background-color: #9AD4EC; /* Light blue background */
+}
+
+.app {
+  display: flex;
+  font-family: 'Afacad';
+  flex-direction: column;
+}
+
+.main-content {
+  margin-top: 70px; /* To account for the fixed navbar */
+  text-align: center;
+  font-family: 'Afacad';
+  padding: 20px;
+}
+
+.badge-title {
+  font-size: 50px;
+  margin-top: 0px;
+  text-decoration: underline;
+  font-weight: 600;
+  font-family: 'Afacad';
+  color: #17005A; /* Dark blue */
+  margin-bottom: 30px;
+  
+}
+
+.badge-container {
+  display: flex;
+  font-family: 'Afacad';
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.badge-card {
+  width: 450px;
+  height: 470px;
+  font-family: 'Afacad';
+  background-color: #FFFFFF; /* White background */
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-top:75px;
+  /* text-align: center; */
+}
+
+.badge-circle {
+  width: 150px;
+  height: 150px;
+  font-family: 'Afacad';
+  margin: 0 auto;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 15px;
+  margin-top: -100px;
+
+}
+
+.badge-icon {
+  width: 110px;
+  height: 110px;
+  font-family: 'Afacad';
+}
+
+.badge-name {
+  font-size: 40px;
+  font-weight: bold;
+  color: #17005A; /* Dark blue */
+  margin-bottom: 10px;
+  font-family: 'Afacad';
+}
+
+.badge-description {
+  font-size: 30px;
+  color: #333333; /* Dark gray */
+  margin-bottom: 10px;
+  font-family: 'Afacad';
+}
+
+.badge-progress {
+  font-size: 50px;
+  font-family: 'Afacad';
+  font-weight: bold;
+  color: #17005A; /* Dark blue */
+}
+
+
+
