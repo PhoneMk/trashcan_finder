@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trash Can Finder</title>
+  <style>
+    #map {
+      height: 100vh;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+  <h1>Trash Can Finder</h1>
+  <div id="map"></div>
+  <script>
+    function initMap() {
+      const center = { lat: 13.7563, lng: 100.5018 };
+
+      const map = new google.maps.Map(document.getElementById("map"), {
+        zoom: 12,
+        center: center,
+      });
+
+      const marker = new google.maps.Marker({
+        position: center,
+        map: map,
+      });
+
+        if (navigator.geolocation) {
+            navigator.geolocation.getCurrentPosition((position) => {
+            const userLocation = {
+            lat: position.coords.latitude,
+            lng: position.coords.longitude,
+        };
+        map.setCenter(userLocation);
+        new google.maps.Marker({
+        position: userLocation,
+        map: map,
+        });
+        });
+        }
+
+    }
+  </script>
+  <script
+    async
+    defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAPsX8r2d-qmvckAl0FMbwBSFjPB61P1XM&callback=initMap"
+  ></script>
+</body>
+</html>
