@@ -1,0 +1,72 @@
+/* Navbar container styling */
+@import url('https://fonts.googleapis.com/css2?family=Afacad:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+.navbar {
+    position: fixed; /* Make the navbar stick to the top */
+    top: 0; /* Ensure it sticks to the very top */
+    left: 0; /* Ensure it spans full width */
+    right: 0; /* Ensure it spans full width */
+    z-index: 1000; /* Keep the navbar above other content */
+    background-color: #ffffff; /* White background */
+    display: flex;
+    font-family: 'Afacad';
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 20px; /* Reduced padding for a thinner navbar */
+    font-family: 'Montserrat', sans-serif; /* Use a clean font */
+    border-bottom: 1px solid #ddd; /* Thin border */
+    height: 50px; /* Control the height of the navbar */
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Optional subtle shadow */
+  }
+  
+  .navbar-container {
+    display: flex;
+    justify-content: space-between; /* Distributes items across the navbar */
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px; /* Add padding to the sides of the navbar */
+  }
+  
+  .logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Aligns the logo and title to the left */
+  }
+  
+  .navbar-logo {
+    width: 45px; /* Adjust logo size */
+    height: 45px;
+    margin-right: 10px;
+  }
+  
+  .navbar-title {
+    font-size: 23px; /* Adjust title size */
+    color:  #17005A; /* Subtle text color */
+    margin-left: -150px;
+    font-family: 'Afacad';
+    font-weight: 500; /* Semi-bold for better visibility */
+  }
+  
+  .navbar-home {
+    margin-right: -600px;
+  }
+  /* Link styles */
+  .navbar-links {
+    display: flex;
+    align-items: center;
+  }
+  
+  .navbar-link {
+    font-size: 23px; /* Adjust font size for links */
+    text-decoration: none;
+    color:  #17005A; /* Subtle text color */
+    margin-left: 70px;
+    font-family: 'Afacad';
+    transition: color 0.3s;
+  }
+  
+  .navbar-link:hover {
+    color: #9AD4EC; /* Change to a hover color (light blue) */
+  }
+  
