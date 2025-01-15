@@ -1,0 +1,188 @@
+/* App.css */
+@import url('https://fonts.googleapis.com/css2?family=Afacad:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Afacad';
+  background-color: #FFFFFF; /* Light blue background */
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  font-family: 'Afacad';
+  min-height: 100vh;
+}
+
+.content-container {
+  padding: 20px;
+  font-family: 'Afacad';
+  background-color: #b4e1f7 ; /* Matches light blue background */
+  flex: 1;
+}
+
+.information-title {
+  font-size: 50px;
+  font-family: 'Afacad';
+  margin-bottom: 15px;
+  margin-top: 10px;
+  margin-top: 50px; /* Add margin to push it downward */
+  font-weight: 550;
+  color: #17005A; /* Dark blue */
+  text-align: center;
+  text-decoration: underline;
+}
+
+
+.form-container {
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: #ffffff; /* White background for the form */
+  padding: 20px;
+  font-family: 'Afacad';
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Default styling for the select box */
+.form-row select {
+  padding: 10px;
+  font-size: 16px;
+  font-family: 'Afacad';
+  border: 1px solid #BEBEBE;
+  border-radius: 5px;
+  width: 100%;
+  box-sizing: border-box;
+  color: #666; /* Default: Light gray text for placeholder */
+}
+
+/* Styling for placeholder option (disabled) */
+.form-row select option[value=""][disabled] {
+  color: #BEBEBE; /* Light gray for placeholder */
+}
+
+/* Darker color for valid options */
+.form-row select:valid {
+  color: #17005A; /* Dark blue for selected options */
+}
+
+
+
+.profile-section {
+  text-align: center;
+  font-family: 'Afacad';
+  margin-bottom: 20px;
+}
+
+.profile-image-placeholder {
+  width: 150px;
+  height: 150px;
+  font-family: 'Afacad';
+  background-color:  #BEBEBE;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+
+.info-form {
+  display: flex;
+  flex-wrap: wrap;
+  font-family: 'Afacad';
+  gap: 20px;
+}
+
+.form-row {
+  flex: 1 1 calc(50% - 20px); /* Two columns */
+  display: flex;
+  font-family: 'Afacad';
+  flex-direction: column;
+}
+
+.form-row label {
+  font-size: 16px;
+  font-family: 'Afacad';
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.form-row input {
+  padding: 10px;
+  font-size: 16px;
+  font-family: 'Afacad';
+  border: 1px solid #BEBEBE;
+  border-radius: 5px;
+}
+
+.save-button {
+  margin-top: 20px;
+  width: 100%;
+  padding: 15px;
+  font-size: 18px;
+  font-family: 'Afacad';
+  background-color: #17005A; /* Dark blue */
+  color: #ffffff;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.save-button:hover {
+  background-color: #9AD4EC; /* Blue hover */
+  font-family: 'Afacad';
+  
+}
+
+
+.acc {
+  font-size: 25px;
+  font-family: 'Afacad';
+  margin-top: 0px;
+}
+
+.profile-section {
+  display: flex;
+  font-family: 'Afacad';
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.profile-image-placeholder {
+  width: 180px;
+  height: 180px;
+  margin-top: -10px;
+  font-family: 'Afacad';
+  margin-bottom: 10px;
+  border-radius: 50%; /* Makes the div a circle */
+  background-color: #ccc; /* Gray background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative; /* For positioning the '+' sign */
+  overflow: hidden; /* Ensures image stays within the circle */
+}
+
+.profile-image {
+  width: 100%; /* Image should fill the circle */
+  height: 100%;
+  font-family: 'Afacad';
+  object-fit: cover; /* Ensures the image is scaled properly */
+  border-radius: 50%; /* Keeps the image inside the circle */
+}
+
+.placeholder-text {
+  font-size: 24px;
+  font-family: 'Afacad';
+  color: #666;
+  font-weight: bold;
+}
+
+.image-upload {
+  margin-top: 10px;
+  font-family: 'Afacad';
+  margin-left: 50px;
+  cursor: pointer;
+}
+
+
