@@ -1,0 +1,268 @@
+@import url('https://fonts.googleapis.com/css2?family=Afacad:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+/* Ensure the app and map take up the full viewport */
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+
+.app {
+  height: 100%;
+  width: 100%;
+}
+
+/* White bar styles */
+#white-bar {
+  position: fixed; /* Fix it to the top */
+  top: 0;
+  left: 0;
+  width: 100%; /* Take full width */
+  height: 90px; /* Adjust height as needed */
+  background-color: white; /* White background */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: add a shadow to make it stand out */
+  z-index: 1000; /* Ensure it's above the map */
+  display: flex;  /* Use flexbox layout */
+  align-items: center;  /* Vertically center the content */
+  justify-content: space-between; /* Space between left and right sections */
+  padding: 0 20px; /* Add padding on both sides */
+  z-index: 1002;
+}
+
+#left-side {
+  display: flex;  /* Flexbox layout for logo and title */
+  align-items: center;  /* Vertically center logo and text */
+}
+
+#right-side {
+  display: flex;  /* Flexbox layout for text and image */
+  align-items: center;  /* Vertically center the text and image */
+}
+
+#left-side h1 {
+  margin: 0;
+  font-size: 36px;
+  color: #17005A;
+  font-family: 'Afacad';
+  font-weight: 100;
+}
+
+#logo {
+  height: 60px;  /* Adjust the size of the logo */
+  margin-right: 20px; /* Space between logo and text */
+}
+
+#login-signup-text {
+  color: #17005A; /* Match the theme color */
+  font-size: 28px;
+  font-family: 'Afacad', sans-serif;
+  cursor: pointer; /* Indicate it's clickable */
+  transition: color 0.2s ease-in-out;
+  margin-right: 35px;
+  text-decoration: underline;
+}
+
+#login-signup-text:hover {
+  color: #9334AE; /* Slight color change on hover */
+}
+
+#profile {
+  height: 60px; /* Adjust the size of the profile image */
+  margin-right: 40px;
+   /* Space between profile image and text */
+}
+
+#add-trashcan-text {
+  color: #17005A; /* Match the theme color */
+  font-size: 28px;
+  font-family: 'Afacad', sans-serif;
+  margin-left: 20px; /* Space from "TRASHCAN MAP" */
+  cursor: pointer; /* Makes it clear it's clickable */
+  transition: color 0.2s ease-in-out;
+  text-decoration: underline;
+}
+
+#add-trashcan-text:hover {
+  color: #9334AE; /* Slight color change on hover */
+}
+
+#login-signup-text {
+  color: #17005A; /* Match the theme color */
+  font-size: 28px;
+  font-family: 'Afacad', sans-serif;
+  cursor: pointer; /* Indicate it's clickable */
+  transition: color 0.2s ease-in-out;
+  text-decoration: underline;
+}
+
+#login-signup-text:hover {
+  color: #9334AE; /* Slight color change on hover */
+}
+
+
+/* Left side bar (vertical) */
+#side-bar {
+  position: fixed;
+  top: 100px; /* Adjust to keep it below the top bar */
+  left: 20px; /* Adjust distance from the left edge */
+  width: 280px; /* Reduce width */
+  height: auto; /* Adjust height dynamically */
+  background-color: white;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1); /* Softer shadow */
+  border-radius: 20px; /* Smooth edges */
+  padding: 20px;
+  box-sizing: border-box;
+  z-index: 1001;
+}
+
+#side-bar h3 {
+  margin-top: -10px;
+  font-size: 24px;
+  color: #17005A;
+  font-weight: 500;
+}
+
+#search-icon {
+  position: absolute;
+  margin-left: -220px;
+  margin-top: 3px;
+  width: 17px;
+  height: 17px;
+  opacity: 0.4;  /* Adjust transparency */
+  margin-right: 50px;
+}
+
+/* Search bar styles */
+#search-bar {
+  width: 200px;  /* Full width of the sidebar */
+  padding: 12px 20px;  /* Space inside the input */
+  margin-top: -10px;
+  font-size: 16px;
+  color: #17005A;
+  background-color: #ffffff;  /* Light background */
+  border: 1px solid #17005A;
+  border-radius: 60px;  /* Rounded corners */
+  outline: none;
+  z-index: 1003;  
+}
+
+#search-bar:not(:placeholder-shown) + #search-icon {
+  opacity: 0; /* Hide the icon when typing */
+}
+
+#search-bar::placeholder {
+  color: #aaa;
+  padding-left: 20px
+}
+
+#side-bar h4 {
+  font-size: 24px;
+  color: #17005A;
+  margin-left: 30px;
+  margin-top: 10px;
+  font-weight: 500;
+}
+
+#filter-icon {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  margin-top: -56px;
+}
+
+#bin-icon {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  margin-left: -28px
+}
+
+#organic-icon {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  margin-left: -28px
+}
+
+#hazard-icon {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  margin-left: -28px
+}
+
+#recycle-icon {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  margin-left: -28px
+}
+
+/* Toggle group container */
+.toggle-group {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: -20px;
+  padding-left: 40px;
+}
+
+/* Each toggle item */
+.toggle-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Toggle switch styles */
+.toggle-switch {
+  position: relative;
+  width: 35px;
+  height: 20px;
+}
+
+.toggle-switch input {
+  display: none;
+}
+
+.switch {
+  position: absolute;
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+  background-color: #9AD4EC;
+  border-radius: 30px;
+  transition: background-color 0.3s;
+}
+
+.switch::before {
+  content: "";
+  position: absolute;
+  width: 17px;
+  height: 17px;
+  background-color: white;
+  border-radius: 50%;
+  top: 1.5px;
+  left: 2px;
+  transition: transform 0.3s;
+}
+
+input:checked + .switch {
+  background-color: #17005A;
+}
+
+input:checked + .switch::before {
+  transform: translateX(15px);
+}
+
+
+/* Map container styles */
+#map {
+  position: absolute;
+  top: 90px; /* Push the map down so it doesn't overlap the white bar */
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
